@@ -22,4 +22,4 @@ Run screen.js (node screen.js)
     It's using puppeteer so you can adapt and change size of screen and positionning
     ⚠️ Puppeteer is no longer supported so run into local device ⚠️
     This step take several minutes (depends html file size)!
-    Be patien
+    Be patient
