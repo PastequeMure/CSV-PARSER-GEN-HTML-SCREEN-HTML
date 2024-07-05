@@ -1,0 +1,179 @@
+:root{
+    --red: rgb(255, 21, 21);
+    --white: rgb(255, 255, 255);
+    --black: rgb(0, 0, 0);
+}
+
+body {
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    margin: 0;
+    padding: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    box-sizing: border-box;
+    
+    .container {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        height: 700px;
+        width: 900px;
+        text-transform: uppercase;
+
+        .title {
+            background-color: var(--red);
+            color: var(--white);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 150px;
+
+            h1 {
+                font-size: 130px;
+                font-weight: bold;
+                transform: rotate(-2deg);
+                letter-spacing: 0.1ch;
+            }
+
+            &::before{
+                content: "/ / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / /";
+                font-weight: bolder;
+                position: absolute;
+                left: 0;
+                top: -1%;
+                letter-spacing: 1.5px;  
+                transform: rotate(-1deg);
+                z-index: 9;
+            }
+
+            &::after{
+                content: "/ / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / /";
+                font-weight: bolder;
+                position: absolute;
+                right: 0;
+                top: 140px;
+                letter-spacing: 1.5px;
+                transform: rotate(-1deg);
+                z-index: 9;
+            }
+        }
+
+        .data {
+            display: flex;
+            .left {
+                width: 325px;
+                background-color: var(--red);
+                .old-price {
+                    border-left: 5px solid var(--red);
+                    border-right: 10px solid var(--red);
+                    text-align: center;
+                    background-color: var(--white);
+                    h4 {
+                        font-size: xx-large;
+                        font-weight: 100;
+                    }
+
+                    h3 {
+                        padding-bottom: 15px;
+                        margin-top: -10px;
+                        font-size: xx-large;
+                        font-weight: 900;
+                        transform: scale(1.5);
+
+                        &::after {
+                            content: "";
+                            width: 80px;
+                            height: 3px;
+                            background-color: var(--red);
+                            position: absolute;
+                            left: 50%;
+                            top: 50%;
+                            transform: translate(-50%,-50%) rotate(-20deg);
+                            margin-top: -5px;
+                        }
+                    }
+                }
+                .eco {
+                    text-align: center;
+                    font-weight: 100;
+                    font-size: xx-large;
+                    
+                    h4 {
+                        color: var(--white);
+                    }
+
+                    .eco-data {
+                        transform: scale(3);
+                    }
+                }
+            }
+
+            .right{
+                padding: 30px;
+                width: calc(900px - 325px);
+                height: 375px;
+                span {
+                    font-size: large;
+                    letter-spacing: 0.2ch;
+                }
+                .new-price {
+                    position: fixed;
+                    bottom: 15%;
+                    right: 30px;
+
+                    span {
+                        position: absolute;
+                        top: -250%;
+                        left: 80%;
+                        font-size: xx-large;
+                        font-weight: 0;
+                        transform: scale(3);
+                    }
+
+                    .unit {
+                        text-align: right;
+                        position: absolute;
+                        left:20%;
+                        top: -200%;
+                        font-weight: bold;
+                        transform: scale(4);
+                        letter-spacing:unset;
+                    }
+
+                    .decimal {
+                        position: absolute;
+                        left: 75%;
+                        top: -140%;
+                        transform: scale(3);
+                        letter-spacing:unset;
+                    }
+
+                    p {
+                        letter-spacing: .5ch;
+                        font-size: xx-large;
+                        font-weight: 100;
+                    }
+                }
+            }
+        }
+
+        .bottom-data {
+            background-color: var(--black);
+            color: var(--white);
+            height: 150px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            h1 {
+                font-weight: 100;
+                letter-spacing: .5ch;
+                font-size: xx-large;
+                max-width: 80%;
+                width: auto;
+            }
+        }
+    }
+}

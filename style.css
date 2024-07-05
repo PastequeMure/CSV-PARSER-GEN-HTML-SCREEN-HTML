@@ -1,0 +1,162 @@
+:root {
+  --red: rgb(255, 21, 21);
+  --white: rgb(255, 255, 255);
+  --black: rgb(0, 0, 0);
+}
+
+body {
+  font-family: Impact, "Arial Narrow Bold", sans-serif;
+  margin: 0;
+  padding: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+body .container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 700px;
+  width: 900px;
+  text-transform: uppercase;
+}
+body .container .title {
+  background-color: var(--red);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+}
+body .container .title h1 {
+  font-size: 130px;
+  font-weight: bold;
+  transform: rotate(-2deg);
+  letter-spacing: 0.1ch;
+}
+body .container .title::before {
+  content: "/ / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / /";
+  font-weight: bolder;
+  position: absolute;
+  left: 0;
+  top: -1%;
+  letter-spacing: 1.5px;
+  transform: rotate(-1deg);
+  z-index: 9;
+}
+body .container .title::after {
+  content: "/ / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / /";
+  font-weight: bolder;
+  position: absolute;
+  right: 0;
+  top: 140px;
+  letter-spacing: 1.5px;
+  transform: rotate(-1deg);
+  z-index: 9;
+}
+body .container .data {
+  display: flex;
+}
+body .container .data .left {
+  width: 325px;
+  background-color: var(--red);
+}
+body .container .data .left .old-price {
+  border-left: 5px solid var(--red);
+  border-right: 10px solid var(--red);
+  text-align: center;
+  background-color: var(--white);
+}
+body .container .data .left .old-price h4 {
+  font-size: xx-large;
+  font-weight: 100;
+}
+body .container .data .left .old-price h3 {
+  padding-bottom: 15px;
+  margin-top: -10px;
+  font-size: xx-large;
+  font-weight: 900;
+  transform: scale(1.5);
+}
+body .container .data .left .old-price h3::after {
+  content: "";
+  width: 80px;
+  height: 3px;
+  background-color: var(--red);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-20deg);
+  margin-top: -5px;
+}
+body .container .data .left .eco {
+  text-align: center;
+  font-weight: 100;
+  font-size: xx-large;
+}
+body .container .data .left .eco h4 {
+  color: var(--white);
+}
+body .container .data .left .eco .eco-data {
+  transform: scale(3);
+}
+body .container .data .right {
+  padding: 30px;
+  width: 575px;
+  height: 375px;
+}
+body .container .data .right span {
+  font-size: large;
+  letter-spacing: 0.2ch;
+}
+body .container .data .right .new-price {
+  position: fixed;
+  bottom: 15%;
+  right: 30px;
+}
+body .container .data .right .new-price span {
+  position: absolute;
+  top: -250%;
+  left: 80%;
+  font-size: xx-large;
+  font-weight: 0;
+  transform: scale(3);
+}
+body .container .data .right .new-price .unit {
+  text-align: right;
+  position: absolute;
+  left: 20%;
+  top: -200%;
+  font-weight: bold;
+  transform: scale(4);
+  letter-spacing: unset;
+}
+body .container .data .right .new-price .decimal {
+  position: absolute;
+  left: 75%;
+  top: -140%;
+  transform: scale(3);
+  letter-spacing: unset;
+}
+body .container .data .right .new-price p {
+  letter-spacing: 0.5ch;
+  font-size: xx-large;
+  font-weight: 100;
+}
+body .container .bottom-data {
+  background-color: var(--black);
+  color: var(--white);
+  height: 150px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .container .bottom-data h1 {
+  font-weight: 100;
+  letter-spacing: 0.5ch;
+  font-size: xx-large;
+  max-width: 80%;
+  width: auto;
+}/*# sourceMappingURL=style.css.map */

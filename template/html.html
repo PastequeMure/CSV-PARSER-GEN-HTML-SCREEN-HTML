@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>{{name}}</title>
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>SOLDES</h1>
+        </div>
+        <div class="data">
+            <div class="left">
+                <div class="old-price">
+                    <h4>Ancien prix:</h4>
+                    <h3>{{old_price.unit}}{{old_price.decimal}} €</h3>
+                </div>
+                <div class="eco">
+                    <h4>Vous économisez</h4>
+                    <h4 class="eco-data">{{eco}} </h4>
+                </div>
+            </div>
+            <div class="right">
+                <span>{{ref}}</span>
+                <div class="new-price">
+                    <span>€</span>
+                    <p class="unit">
+                        {{new_price.unit}}
+                    </p>
+                    <p class="decimal">{{new_price.decimal}}</p>
+                    <p>GARANTIE 2 ANS</p>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-data">
+            <h1>{{name}}</h1>
+        </div>
+    </div>
+</body>
+</html>
